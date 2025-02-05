@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="1200" height="800" fill="#f8f9fa"/>
+    
+    <!-- 周边国家轮廓（浅灰色） -->
+    <path d="M600,100 Q800,150 900,300 T1000,500 T900,700 T700,750 T500,700 T300,600 T200,400 T300,200 T600,100" 
+          fill="#f0f0f0" stroke="#e0e0e0" stroke-width="1"/>
+    
+    <!-- 中国地图主轮廓 -->
+    <path d="M550,200 Q650,180 750,200 T900,250 T950,350 T900,450 T800,500 T650,550 T500,500 T400,450 T350,350 T400,250 T550,200" 
+          fill="#ffffff" stroke="#003366" stroke-width="2"/>
+    
+    <!-- 主要省份边界线（简化） -->
+    <g class="provinces" stroke="#e0e0e0" stroke-width="1" fill="none">
+        <!-- 东北地区 -->
+        <path d="M750,250 L800,200 L850,250"/>
+        <!-- 华北地区 -->
+        <path d="M600,300 L700,300 L750,350"/>
+        <!-- 华东地区 -->
+        <path d="M700,400 L800,350 L850,400"/>
+        <!-- 华南地区 -->
+        <path d="M600,450 L700,500 L750,450"/>
+        <!-- 西南地区 -->
+        <path d="M500,400 L550,450 L500,500"/>
+        <!-- 西北地区 -->
+        <path d="M400,300 L450,250 L500,300"/>
+    </g>
+    
+    <!-- 主要城市标注点 -->
+    <g class="cities" fill="#666666" font-size="12">
+        <text x="750" y="280">北京</text>
+        <text x="780" y="320">天津</text>
+        <text x="820" y="350">上海</text>
+        <text x="750" y="450">广州</text>
+        <text x="760" y="470">深圳</text>
+        <text x="700" y="380">武汉</text>
+        <text x="650" y="400">重庆</text>
+        <text x="600" y="350">西安</text>
+    </g>
+    
+    <!-- 海洋区域 -->
+    <path class="ocean" d="M900,300 Q950,400 900,500" 
+          fill="none" stroke="#e6f3ff" stroke-width="20" opacity="0.5"/>
+    
+    <!-- 主要河流（长江、黄河简化） -->
+    <g class="rivers" stroke="#e6f3ff" stroke-width="1">
+        <path d="M400,350 Q600,400 800,350" />
+        <path d="M450,250 Q600,300 750,250" />
+    </g>
+</svg> 

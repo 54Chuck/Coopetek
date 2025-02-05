@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coopetek - 专业质量管理解决方案</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:info@coopetek.com">info@coopetek.com</a>
+                    <div class="language-switch">
+                        <a href="/">EN</a>
+                        <span>|</span>
+                        <a href="/zh" class="active">中文</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="/zh">
+                        <img src="/images/logo.png" alt="Coopetek Logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="dropdown">
+                            <a href="/zh/about" class="active">关于我们</a>
+                            <ul class="dropdown-content">
+                                <li><a href="/zh/about/our-location">公司地址</a></li>
+                                <li><a href="/zh/about/impartiality">公正性与合规</a></li>
+                                <li><a href="/zh/about/news">新闻动态</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/zh/solutions">解决方案</a>
+                            <ul class="dropdown-content">
+                                <li><a href="/zh/solutions/quality-control">质量控制</a></li>
+                                <li><a href="/zh/solutions/due-diligence">尽职调查审核</a></li>
+                                <li><a href="/zh/solutions/testing-services">测试服务</a></li>
+                                <li><a href="/zh/solutions/training-consulting">培训与咨询</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/zh/expertise">专业领域</a></li>
+                        <li><a href="/zh/contact">联系我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>专业的质量管理解决方案</h1>
+            <p>为您的产品提供全方位的质量保证服务</p>
+            <a href="/zh/contact" class="cta-button">联系我们</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>我们的服务</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>质量控制</h3>
+                    <p>全面的制造和贸易质量检验解决方案</p>
+                    <a href="/zh/solutions/quality-control">了解更多</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>尽职调查审核</h3>
+                    <p>专业的业务运营和合规性评估</p>
+                    <a href="/zh/solutions/due-diligence">了解更多</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>测试服务</h3>
+                    <p>玩具、纺织品和电子产品的综合测试</p>
+                    <a href="/zh/solutions/testing-services">了解更多</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>培训与咨询</h3>
+                    <p>质量管理和合规性的专业指导</p>
+                    <a href="/zh/solutions/training-consulting">了解更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="/zh/about">关于我们</a></li>
+                        <li><a href="/zh/solutions">解决方案</a></li>
+                        <li><a href="/zh/contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <p>地址：深圳市南山区科技园</p>
+                    <p>电话：+86 755 XXXXXXXX</p>
+                    <p>邮箱：info@coopetek.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>法律条款</h4>
+                    <ul>
+                        <li><a href="/zh/privacy-policy">隐私政策</a></li>
+                        <li><a href="/zh/terms">使用条款</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Coopetek.com 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 语言切换功能
+        document.querySelectorAll('.language-switch a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const lang = this.getAttribute('href');
+                window.location.href = lang; // 直接跳转到对应语言的页面
+            });
+        });
+    </script>
+</body>
+</html> 
